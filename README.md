@@ -1,8 +1,9 @@
 # Getting Started with Create React App
-#counter app
+# live: https://todos-counter.netlify.app/
+## Counter App
 ![image](https://github.com/siyamulislam/react-redux/assets/53119070/7f283ab4-f553-4771-b7ac-25c244c5d007)
 
-#todo app
+## Todos App
 ![image](https://github.com/siyamulislam/react-redux/assets/53119070/135a6df3-ede1-4cf9-a4a5-b30dc85ec44e)
 
 
