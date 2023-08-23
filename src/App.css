@@ -9,7 +9,7 @@
   }
 }
 
-h2,h3 {
+h2,h3,h4 {
  color: rgb(67, 66, 66); 
 }
 
@@ -35,4 +35,13 @@ input{
 }
 .buttonReset{ 
   background-color: blue; 
+}
+
+
+.todo-card {
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
