@@ -13,13 +13,19 @@ h2,h3 {
  color: rgb(67, 66, 66); 
 }
 
-button{
+button,input{
   font-size: 90%;
   position: relative;
   top: 10vh;
   margin-left: 5px; 
   border-radius: 8%;
   color: white;
+}
+input{
+  width: 75px; /* Default width */
+  max-width: 150px;
+  padding: 1px 3px;
+  color: rgb(43, 42, 42);
 }
 .buttonInc{ 
   background-color: red; 

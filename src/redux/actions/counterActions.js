@@ -16,6 +16,7 @@ export const resetCounter =()=>{
     }
 }
 export const incrementByAmountCounter =(value)=>{
+    console.log(value)
     return{
         type: INCREMENT_BY_AMOUNT,
         payload:value
