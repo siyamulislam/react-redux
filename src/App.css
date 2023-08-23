@@ -12,36 +12,11 @@
 h2,h3,h4 {
  color: rgb(67, 66, 66); 
 }
-
-button,input{
+.SwitchBtn{
   font-size: 90%;
   position: relative;
-  top: 10vh;
-  margin-left: 5px; 
+  margin: 5px; 
   border-radius: 8%;
   color: white;
-}
-input{
-  width: 75px; /* Default width */
-  max-width: 150px;
-  padding: 1px 3px;
-  color: rgb(43, 42, 42);
-}
-.buttonInc{ 
-  background-color: red; 
-}
-.buttonDec{ 
-  background-color: green; 
-}
-.buttonReset{ 
-  background-color: blue; 
-}
-
-
-.todo-card {
-  border: 1px solid #ccc;
-  margin: 10px;
-  padding: 10px;
-  background-color: #f0f0f0;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: rgb(22, 126, 69);
 }

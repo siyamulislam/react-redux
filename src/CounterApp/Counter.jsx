@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { decrementCounter, incrementByAmountCounter, incrementCounter, resetCounter } from '../redux/actions/counterActions';
+import './Counter.css';
 
 const Counter = () => {
   const count = useSelector((state) => state.counterR.count);
@@ -22,20 +23,20 @@ const Counter = () => {
   };
 
   return (
-    <div>
+    <div counterDiv>
       <h3>Counter App</h3>
       <h3 style={{
         fontSize: '140%',
         position: 'relative',
-        top: '5vh'
+        top: '2vh'
       }}
       > {count}</h3>
 
-      <button onClick={handelInc} type="button" className='buttonInc' >Increment</button>
-      <button onClick={handelDec} type='button' className='buttonDec' >Decrement</button>
-      <button onClick={handelReset} type='button' className='buttonReset' >Reset</button>
-      <input type="number" value={incrementValue} onChange={(e) => setIncrementValue(e.target.value)} placeholder="inc value" />
-      <button onClick={handelIncByValue} type='button' className='buttonInc' >Increment by {incrementValue}</button>
+      <button onClick={handelInc} type="button" className='cB buttonInc' >Increment</button>
+      <button onClick={handelDec} type='button' className='cB buttonDec' >Decrement</button>
+      <button onClick={handelReset} type='button' className='cB buttonReset' >Reset</button>
+      <input type="number" value={incrementValue} onChange={(e) => setIncrementValue(e.target.value)} placeholder="inc value" className='cI' />
+      <button onClick={handelIncByValue} type='button' className='cB buttonInc' >Increment by {incrementValue}</button>
     </div>
   )
 };

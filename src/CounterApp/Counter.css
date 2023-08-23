@@ -1,0 +1,24 @@
+
+ .cB, .cI{
+    font-size: 90%;
+    position: relative;
+    top: 2vh;
+    margin: 5px; 
+    border-radius: 8%;
+    color: white;
+  }
+   .cI{
+    width: 75px; /* Default width */
+    max-width: 150px;
+    padding: 1px 3px;
+    color: rgb(43, 42, 42);
+  }
+  .buttonInc{ 
+    background-color: red; 
+  }
+  .buttonDec{ 
+    background-color: green; 
+  }
+  .buttonReset{ 
+    background-color: blue; 
+  }
