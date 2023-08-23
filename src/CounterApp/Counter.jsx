@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { decrementCounter, incrementByAmountCounter, incrementCounter, resetCounter } from '../../redux/actions/counterActions';
+import { decrementCounter, incrementByAmountCounter, incrementCounter, resetCounter } from '../redux/actions/counterActions';
 
 const Counter = () => {
-  const count = useSelector((state) => state.count);
+  const count = useSelector((state) => state.counterR.count);
   // const {count} = store.getState(); 
   const [incrementValue, setIncrementValue] = useState(25); // Initialize with a default value
 
