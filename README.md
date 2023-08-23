@@ -1,5 +1,6 @@
 # Getting Started with Create React App
-![image](https://github.com/siyamulislam/react-redux/assets/53119070/6abf0c9d-1d68-4819-b0c0-afb107f2b99b)
+
+![image](https://github.com/siyamulislam/react-redux/assets/53119070/3f7ff7c4-002e-471c-b1ed-78560a842548)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
