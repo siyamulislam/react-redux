@@ -1,29 +1,28 @@
 import React, { useState } from 'react'
-import { useDispatch, useSelector } from 'react-redux';
-import { decrementCounter, incrementByAmountCounter, incrementCounter, resetCounter } from '../redux/actions/counterActions';
-import './Counter.css';
+import { useDispatch, useSelector } from 'react-redux';import './Counter.css';
+import { decrement, increment, incrementByAmount, reset } from '../features/counter/counterSlice';
 
 const Counter = () => {
-  const count = useSelector((state) => state.counterR.count);
+  const count = useSelector((state) => state.counter.count);
   // const {count} = store.getState(); 
   const [incrementValue, setIncrementValue] = useState(25); // Initialize with a default value
 
   const dispatch = useDispatch();
   const handelInc = () => {
     // store.dispatch(incrementCounter())
-    dispatch(incrementCounter())
+    dispatch(increment())
   }
-  const handelDec = () => { if(count>0)dispatch(decrementCounter()) };
-  const handelReset = () => { dispatch(resetCounter()) };
+  const handelDec = () => { if(count>0)dispatch(decrement()) };
+  const handelReset = () => { dispatch(reset()) };
   const handelIncByValue = () => {
     const parsedIncrementValue = parseInt(incrementValue, 10);
     if (!isNaN(parsedIncrementValue)) {
-      dispatch(incrementByAmountCounter(parsedIncrementValue));
+      dispatch(incrementByAmount(parsedIncrementValue));
     }
   };
 
   return (
-    <div counterDiv>
+    <div >
       <h3>Counter App</h3>
       <h3 style={{
         fontSize: '140%',
