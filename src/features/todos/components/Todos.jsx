@@ -1,17 +1,15 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getAllTodos } from '../redux/actions/todosActions';
 import './Todos.css';
+import { getAllTodos } from '../todosSlice';
 
 const Todos = () => {
-    const { isLoading, todos, error } = useSelector((state) => state.todosR);
+    const { isLoading, todos, error } = useSelector((state) => state.todos);
     const dispatch = useDispatch();
 
     useEffect(() => {
         dispatch(getAllTodos())
     }, [dispatch]);
-
-    console.log(todos);
 
     return (
         <div className="todos-container">
